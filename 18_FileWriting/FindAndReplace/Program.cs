@@ -2,11 +2,24 @@
 
 namespace FindAndReplace
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            AskForInput.FileInput();
+            FileReadWrite.TextReader();
+
+            
+
+            //Console.WriteLine("Hello World!");
+
+
         }
+        //public static void EndOfProgram()
+        //{
+        //    Console.WriteLine("End of Program");
+        //}
+
     }
 }
