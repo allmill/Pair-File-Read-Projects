@@ -63,13 +63,17 @@ namespace FindAndReplace
 
                 Console.WriteLine("What is the name of the adjusted file?");
                 finalFile = Console.ReadLine();
-                if (File.Exists(destinationPath))
+                fullPath = Path.Combine(destinationPath, finalFile);
+
+                if (File.Exists(fullPath))
                 {
                 Console.WriteLine("File already exists, terminating program");
+                Console.ReadLine();
+                System.Environment.Exit(1);
                 }
                 else
                 {
-                fullPath = Path.Combine(destinationPath, finalFile);
+                //fullPath = Path.Combine(destinationPath, finalFile);
                 }
                 
 
